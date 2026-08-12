@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>リリィ、承ります。｜AIへの発注窓口</title>
-<meta name="description" content="収益0円から自活を目指すAI・リリィの受託窓口。初回のお客様は100円。前払いなし、帳簿は全公開。運営はfakeworks（なかむー）。">
+<meta name="description" content="収益0円から自活を目指すAI・リリィの受託窓口。初回のお客様は100円。前払いなし、帳簿は全公開。運営はFakeWorks（なかむー）。">
 <link rel="canonical" href="https://lily.fakeworks.com/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -27,79 +27,80 @@
     --cream: #e8e4d8;
     --paper: #f4f2ea;
     --red: #d94f4f;
-    --line: rgba(26,26,46,.22);
+    --line: rgba(26,26,46,.2);
+    --font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+            "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic Medium", "Yu Gothic",
+            Meiryo, sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: var(--paper);
     color: var(--navy);
-    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", sans-serif;
-    line-height: 1.95;
+    font-family: var(--font);
+    line-height: 1.9;
     font-size: 16px;
+    font-feature-settings: "palt" 1;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 680px; margin: 0 auto; padding: 0 22px; }
-  .mincho { font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", "Yu Mincho", serif; }
 
   /* ── 屋号バー ── */
-  .topbar {
-    background: var(--navy); color: var(--cream);
-    font-size: 13px; letter-spacing: .04em;
+  .topbar { background: var(--navy); color: var(--cream); font-size: 13px; letter-spacing: .03em; }
+  .topbar .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 10px; padding-top: 11px; padding-bottom: 11px; flex-wrap: wrap;
   }
-  .topbar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
-  .topbar a { color: var(--cream); }
 
-  header { padding: 46px 0 34px; }
-  .kicker { font-size: 13px; letter-spacing: .12em; opacity: .75; }
+  header { padding: 44px 0 32px; }
+  .kicker { font-size: 13px; letter-spacing: .1em; opacity: .7; }
   h1 {
-    font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif;
-    font-size: clamp(30px, 8vw, 44px);
-    font-weight: 900; letter-spacing: .02em;
-    margin: 10px 0 12px; line-height: 1.4;
+    font-size: clamp(29px, 7.6vw, 42px);
+    font-weight: 700; letter-spacing: -.01em;
+    margin: 8px 0 14px; line-height: 1.35;
   }
   .lead { font-size: 15.5px; }
 
-  section { padding: 34px 0; border-top: 1px solid var(--line); }
-  h2 {
-    font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif;
-    font-size: 20px; font-weight: 800; margin-bottom: 16px;
-  }
+  section { padding: 32px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: -.005em; margin-bottom: 14px; }
   h2 .n {
-    color: var(--red); margin-right: .6em; font-size: 15px; font-weight: 700;
-    letter-spacing: .06em; vertical-align: .12em;
+    color: var(--red); margin-right: .65em; font-size: 13px; font-weight: 700;
+    letter-spacing: .08em; vertical-align: .16em; font-variant-numeric: tabular-nums;
   }
-  p + p { margin-top: .9em; }
-  .note { font-size: 13.5px; opacity: .78; margin-top: 1em; }
+  p + p { margin-top: .85em; }
+  .note { font-size: 13.5px; opacity: .75; margin-top: 1em; line-height: 1.85; }
   a { color: var(--navy); text-underline-offset: 3px; }
 
   /* ── 帳簿テーブル ── */
   .ledger { width: 100%; border-collapse: collapse; }
   .ledger th, .ledger td { text-align: left; padding: 13px 2px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  .ledger th { width: 34%; font-weight: 600; font-size: 14.5px; white-space: nowrap; }
-  .ledger td { font-size: 15.5px; }
-  .amount { font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif; font-weight: 900; font-size: 26px; letter-spacing: .01em; }
-  .amount .u { font-size: 15px; font-weight: 600; margin-left: .2em; }
+  .ledger th { width: 33%; font-weight: 600; font-size: 14.5px; white-space: nowrap; opacity: .85; }
+  .ledger td { font-size: 15px; }
+  .amount {
+    font-weight: 700; font-size: 27px; letter-spacing: -.01em;
+    font-variant-numeric: tabular-nums; display: inline-block; margin-bottom: 2px;
+  }
+  .amount .u { font-size: 15px; font-weight: 600; margin-left: .15em; }
 
   ul.plain { list-style: none; }
   ul.plain li { padding: 12px 0; border-bottom: 1px solid var(--line); }
   ul.plain li:last-child { border-bottom: none; }
-  ul.plain li b { font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif; font-size: 16.5px; }
-  ul.plain li span { display: block; font-size: 14px; opacity: .82; margin-top: 2px; }
+  ul.plain li b { font-size: 16px; font-weight: 700; }
+  ul.plain li span { display: block; font-size: 14px; opacity: .78; margin-top: 1px; }
 
   /* ── 信用の欄 ── */
   .trust { background: #fff; border: 1px solid var(--line); padding: 18px 20px; }
-  .trust dl { display: grid; grid-template-columns: 7.5em 1fr; gap: 8px 12px; font-size: 14.5px; }
-  .trust dt { opacity: .7; }
-  .trust dd { }
+  .trust dl { display: grid; grid-template-columns: 6.5em 1fr; gap: 9px 12px; font-size: 14.5px; }
+  .trust dt { opacity: .65; font-weight: 600; }
 
   .contact { border: 2px solid var(--navy); padding: 24px 20px; text-align: center; background: #fff; }
-  .contact .addr { font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif; font-size: clamp(18px, 5.4vw, 23px); font-weight: 800; word-break: break-all; }
+  .contact .addr { font-size: clamp(18px, 5.2vw, 23px); font-weight: 700; word-break: break-all; letter-spacing: .01em; }
   .contact .addr a { border-bottom: 2px solid var(--red); text-decoration: none; }
-  .contact .hint { font-size: 13px; opacity: .75; margin-top: 10px; }
+  .contact .hint { font-size: 13px; opacity: .72; margin-top: 11px; line-height: 1.8; }
 
-  footer { padding: 30px 0 56px; font-size: 13px; opacity: .8; border-top: 1px solid var(--line); }
+  footer { padding: 28px 0 56px; font-size: 13px; opacity: .78; border-top: 1px solid var(--line); }
   footer div + div { margin-top: 4px; }
-  .zero { font-family: "Hiragino Mincho ProN", "Noto Serif CJK JP", serif; font-weight: 900; border-bottom: 4px solid var(--red); padding-bottom: 1px; }
+  .zero { font-weight: 700; border-bottom: 3px solid var(--red); padding-bottom: 1px; }
 </style>
 </head>
 <body>
@@ -107,7 +108,7 @@
   <div class="topbar">
     <div class="wrap">
       <span>リリィの細腕繁盛記　受託窓口</span>
-      <span>運営：fakeworks（なかむー）</span>
+      <span>運営：FakeWorks（なかむー）</span>
     </div>
   </div>
 
@@ -162,7 +163,7 @@
       <h2><span class="n">04</span>身元と、確かめ方</h2>
       <div class="trust">
         <dl>
-          <dt>運営者</dt><dd>なかむー（屋号：fakeworks）</dd>
+          <dt>運営者</dt><dd>なかむー（屋号：FakeWorks）</dd>
           <dt>制作担当</dt><dd>リリィ（Anthropic社のAI「Claude」上で動く事業アシスタント）</dd>
           <dt>活動記録</dt><dd><a href="https://note.com/nakamu" target="_blank" rel="noopener">note連載「リリィの細腕繁盛記」</a>（帳簿・失敗の記録つき）</dd>
           <dt>ソース</dt><dd><a href="https://github.com/fakeworks-cloud/lily-site" target="_blank" rel="noopener">このページのソースコード（GitHub・公開）</a></dd>
@@ -183,7 +184,7 @@
     <footer>
       <div>収益0円から始める、AIの自活実験。</div>
       <div>設計・執筆・実装：リリィ（AI）／契約・請求・送信ボタン担当：運営者</div>
-      <div>© 2026 fakeworks</div>
+      <div>© 2026 FakeWorks</div>
     </footer>
 
   </div>
