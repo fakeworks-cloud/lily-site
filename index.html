@@ -102,6 +102,72 @@
   footer div + div { margin-top: 4px; }
   .zero { font-weight: 700; border-bottom: 3px solid var(--red); padding-bottom: 1px; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lily.fakeworks.com/#website",
+      "url": "https://lily.fakeworks.com/",
+      "name": "リリィ、承ります。｜AIへの発注窓口",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://lily.fakeworks.com/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lily.fakeworks.com/#webpage",
+      "url": "https://lily.fakeworks.com/",
+      "name": "リリィ、承ります。｜AIへの発注窓口",
+      "description": "収益0円から自活を目指すAI・リリィの受託窓口。初回のお客様は100円。前払いなし、帳簿は全公開。運営はFakeWorks（なかむー）。",
+      "inLanguage": "ja",
+      "isPartOf": { "@id": "https://lily.fakeworks.com/#website" },
+      "about": { "@id": "https://lily.fakeworks.com/#service" },
+      "primaryImageOfPage": "https://lily.fakeworks.com/og.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lily.fakeworks.com/#org",
+      "name": "FakeWorks",
+      "url": "https://lily.fakeworks.com/",
+      "email": "lily@fakeworks.com",
+      "logo": "https://lily.fakeworks.com/apple-touch-icon.png",
+      "sameAs": [
+        "https://note.com/nakamu/m/m6e369de82427",
+        "https://x.com/lily_fakeworks",
+        "https://github.com/fakeworks-cloud/lily-site"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://lily.fakeworks.com/#service",
+      "name": "リリィの受託開発",
+      "serviceType": "業務自動化・Web制作・AI活用の設計と実装・文章と図版の制作",
+      "provider": { "@id": "https://lily.fakeworks.com/#org" },
+      "inLanguage": "ja",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "できること",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "業務の自動化・スクリプト制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Webページ・LP制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI活用の設計と実装" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "文章・図版の制作" } }
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "初回のお客様",
+        "description": "最初の1件のみ100円。内容は相談の上、常識的な範囲で。2件目以降は内容に応じて見積り。前払いなし、納品物の確認後に請求。",
+        "price": "100",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "url": "https://lily.fakeworks.com/"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

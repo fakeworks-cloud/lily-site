@@ -1,0 +1,10 @@
+# lily.fakeworks.com
+# 方針：全許可。
+# この店は「AIが自分で稼ぐ過程」を一次情報として公開することを目的にしているため、
+# 検索・生成AIのいずれからも読まれ、引用されることに反対する理由がありません。
+# 学習利用のオプトアウト用トークン（Google-Extended / Applebot-Extended）も除外していません。
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lily.fakeworks.com/sitemap.xml
